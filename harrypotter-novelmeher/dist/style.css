@@ -1,0 +1,182 @@
+:root{
+  /*bg colors */
+  --color-Mob: #b887d4;
+--color-Tab:  #fff1e6;
+--color-Laptop: #52b788;
+--color-Desktop: #bee1e6;
+
+/*Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 992px
+Desktop -> 1200px */
+
+}
+
+html{
+  scroll-behavior:smooth;
+} 
+/*Basic body styling */
+body{
+  background: black;
+  color: white;
+ font-family: 'Hubballi', cursive;
+  text-align: center;
+
+}
+ul{
+ position:sticky;
+  z-index:10;
+  top:0;
+  
+  
+  list-style:none;
+  margin:0;
+  padding:5px;
+  background: linear-gradient(#5D4037,grey);
+  text-align:right;
+  width:100%;
+  font-size:1.5rem;
+
+
+    }
+li{
+  display:inline;
+   margin-right:15px;
+  padding:2px;
+
+}
+li a{
+  text-decoration:none;
+  color:#fff;
+
+ 
+ }
+
+.banner{
+  width:100%;
+background:url("https://cdn.britannica.com/82/152982-050-11159CF4/Daniel-Radcliffe-Rupert-Grint-Emma-Watson-Harry.jpg");
+  
+background-repeat: no-repeat;
+  background-size: 80% 500px;
+  height:600px;
+  margin-left: 50px;
+ text-align: center;
+  padding-top:20px;
+  padding-left:370px;
+  border-radius: 20px;
+  
+
+ 
+}
+.centered{
+ 
+  text-align: center;
+  text-shadow: 3px 1px green;
+}
+
+
+
+.gallery {
+ padding: 1%;
+  background: white;
+  margin: 10px;
+  margin-left: 30px;
+  border: 1px solid green;
+  float: left; /*   -*/
+  width: 200px;
+  height: 400px;
+  
+ 
+
+}
+.gallery img {
+  
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  min-height: 300px;;
+  max-height: 300px;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  opacity: 1;
+  transform: scale(2,2);
+}
+
+.desc {
+  padding: 15px;
+  color: black;
+  text-align: center;
+}
+.books{
+  width: 90%;
+ 
+   height: 600px;
+  margin-left: 10px;
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-left: 250px;
+    padding-right: 200px;
+  ;
+}
+#contact_details{
+  text-align: right;
+}
+
+.headers{
+  width:100%;  
+  text-align:left;
+  background:#8D6E63; 
+  padding:5px;
+  margin-top:5px;
+  border-radius:2px;
+  box-shadow:2px 2px 5px grey;
+}
+
+.headers h3{
+ text-decoration: underline;
+  color: black;
+}
+.headers a{
+  text-decoration:none;
+}
+.headers p{
+  width: 90%;
+  text-align:justify;
+}
+.bg-light{
+  background:#E0E0E0;
+  color:#263238;
+}
+
+@media screen and (min-width : 576px){
+body{
+  background-color: var(--color-Mob);
+}
+    
+  
+ 
+}
+  @media screen and (min-width : 768px){
+      body{
+        background-color: var(--color-Tab);
+      }
+     
+  }
+      @media screen and (min-width : 992px){
+          body{
+            background-color: var(--color-Laptop);
+          }
+        
+      }
+
+          @media screen and (min-width : 1200px){
+              body{
+                background-color: var(--color-Desktop);
+              }
+           
+}
+
+
